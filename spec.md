@@ -95,10 +95,7 @@ import function1 from library
 let x = 9  
 let y = 10  
 
-// This is a comment in the program  
-/*  This is also a comment  
-    in the program  
-*/  
+// This is a comment in the program
 
 addTwo(number1, number2) {  
   return number1 + number2  
