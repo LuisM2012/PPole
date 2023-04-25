@@ -46,7 +46,7 @@ public class Compiler {
       }
     }
     if (translate) {
-      program = new Translator(stream).translate();
+      program = new Translator().translate(stream);
     }
     if (check) {
       new Checker().check(program);

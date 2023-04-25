@@ -28,13 +28,16 @@ public class Parser {
   }
 
   private void parseLine(String line) {
-    String list[] = line.split("( |\t)+");
+    line.replace('\t', ' ');
+    String list[] = line.split(" ");
 
     for (String token : list) {
       if (token.startsWith("//")) {
         break;
       }
-      this.stream.addToken(token);
+      if (!token.equals("")) {
+        this.stream.addToken(token);
+      }
     }
   }
 }

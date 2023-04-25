@@ -18,8 +18,6 @@ public class TokenStream {
   }
 
   protected void addToken(String token) {
-    if (!token.equals("")) {
-      stream.add(scheme.match(token));
-    }
+    stream.add(scheme.match(token));
   }
 }
